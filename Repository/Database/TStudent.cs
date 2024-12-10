@@ -8,6 +8,10 @@ namespace Repository.Database
 {
     public class TStudent
     {
+    public string Name { get; set; }
+
+    public string phone { get; set; }
+
 
 
     }

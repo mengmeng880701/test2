@@ -10,7 +10,7 @@ namespace Repository.Database
     public class TClubStudent:CD
     {
 
-        public long Id { get; set; }
+        
 
         public string Name { get; set; }
 
