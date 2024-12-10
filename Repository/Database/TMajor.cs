@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Database
 {
-    public class Major:CD
+    public class TMajor:CD
     {
         public string Name { get; set; }
 
