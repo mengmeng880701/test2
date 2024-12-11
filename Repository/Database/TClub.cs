@@ -10,10 +10,11 @@ namespace Repository.Database
     public class TClub:CD
     {
         
-
         public string Name { get; set; }
 
         public string? Description { get; set; }
+
+
 
     }
 }

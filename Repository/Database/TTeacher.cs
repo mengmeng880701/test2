@@ -18,5 +18,8 @@ namespace Repository.Database
 
         public string? Description { get; set; }
 
+       public virtual List<TStudent> Students { get; set; }
+
+
     }
 }

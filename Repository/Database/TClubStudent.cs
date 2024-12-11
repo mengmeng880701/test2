@@ -14,9 +14,21 @@ namespace Repository.Database
 
         public string Name { get; set; }
 
-        public string Description { get; set; }
+
+        public long ClubId { get; set; }
+        public virtual TClub Club { get; set; }
+
+
 
         public long StudentId { get; set; }
+
+       public virtual TStudent Student { get; set; }
+
+
+        //此表與CLUB表為甚麼關係
+
+        //一的表public virtual TStudent Student { get; set; }
+        //多的表public virtual List<TClubStudent> TClubStudent { get; set; }
 
     }
 }

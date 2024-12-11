@@ -12,7 +12,9 @@ namespace Repository.Database
 
     public string phone { get; set; }
 
+    public long TeacherId { get; set; }
 
+    public virtual TTeacher Teacher { get; set; }
 
     }
 }
