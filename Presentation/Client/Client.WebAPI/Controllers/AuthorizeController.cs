@@ -13,14 +13,31 @@ using WebAPI.Core.Filters;
 namespace Client.WebAPI.Controllers
 {
 
+    
+
 
     /// <summary>
     /// 系统访问授权模块
     /// </summary>
     [Route("[controller]/[action]")]
     [ApiController]
+
     public class AuthorizeController(IAuthorizeService authorizeService) : ControllerBase
+    
     {
+
+        [HttpGet]
+        public void Test([FromServices]DatabaseContext db,IdService idService)
+        {
+           TMajor major = new ();
+            major.Id = idService.GetId();
+            major.Name = "數學課";
+            major.Description = "微積分";
+            db.TMajor.Add(major);
+            db.SaveChanges();
+
+
+        }
 
 
         /// <summary>

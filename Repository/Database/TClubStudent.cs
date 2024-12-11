@@ -12,7 +12,7 @@ namespace Repository.Database
 
         
 
-        public string Name { get; set; }
+        
 
 
         public long ClubId { get; set; }

@@ -20,6 +20,10 @@ namespace Repository.Database
 
        public virtual List<TStudent> Students { get; set; }
 
+        public long MajorId { get; set; }
+
+        public virtual TMajor Major { get; set; }
+
 
     }
 }
